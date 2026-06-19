@@ -41,7 +41,24 @@ La conexión con la base de datos se realiza de forma directa a un clúster en l
 
 ---
 
-## ⚙️ Instrucciones de Ejecución
+## 📲 Descarga e Instalación Directa (Android APK)
+
+Para probar la aplicación en un dispositivo Android sin necesidad de instalar el SDK de Flutter ni compilar el código, se puede descargar directamente el archivo APK precompilado que se encuentra en este repositorio.
+
+### Pasos para la descarga e instalación:
+1.  **Descargar el archivo**:
+    *   Ingresar desde el navegador del celular (o PC) a la carpeta del repositorio: [APK/](APK/).
+    *   Presionar sobre el archivo [MediaExplorer.apk](APK/MediaExplorer.apk) y hacer clic en el botón de **Download** (Descargar archivo raw) para bajar el archivo de 53.7 MB.
+2.  **Instalar en el celular**:
+    *   Abrir el archivo APK descargado en el dispositivo Android.
+    *   Si el sistema solicita autorización, habilitar el permiso de **"Instalar aplicaciones desconocidas"** para el navegador o el administrador de archivos utilizado.
+    *   Presionar en **"Instalar"** y luego abrir la aplicación.
+3.  **Ejecutar**:
+    *   La aplicación se conectará automáticamente a la API de CheapShark y a la base de datos en la nube de MongoDB Atlas, ya que los accesos están empaquetados dentro de este ejecutable de forma segura.
+
+---
+
+## ⚙️ Instrucciones de Ejecución (Para Desarrollo)
 
 ### Requisitos Previos:
 *   SDK de **Flutter** instalado.
