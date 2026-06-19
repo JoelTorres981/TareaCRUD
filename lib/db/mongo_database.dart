@@ -1,10 +1,10 @@
 import 'package:mongo_dart/mongo_dart.dart';
+import 'db_config.dart';
 
 import '../models/cheapshark.dart';
 
 class MongoDatabase {
-  static const String mongoUrl =
-      'mongodb+srv://<USER>:<PASSWORD>@cluster0.nbnn2uz.mongodb.net/MediaExplorer?retryWrites=true&w=majority&appName=Cluster0';
+  static const String mongoUrl = DbConfig.mongoUrl;
 
   static const String collectionName = 'cheapshark';
 
