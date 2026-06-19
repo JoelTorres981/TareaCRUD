@@ -25,6 +25,16 @@ class MongoDatabase {
     }).toList();
   }
 
+  static Future<List<CheapSharkDeal>> getDealsPaged({required int skip, required int limit}) async {
+    final List<Map<String, dynamic>> data = await collection
+        .find(where.skip(skip).limit(limit))
+        .toList();
+
+    return data.map((item) {
+      return CheapSharkDeal.fromMap(item);
+    }).toList();
+  }
+
   static Future<void> insertDeal(CheapSharkDeal deal) async {
     await collection.insertOne(deal.toMap());
   }
